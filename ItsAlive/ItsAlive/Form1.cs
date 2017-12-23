@@ -6,6 +6,7 @@ using System.Text;
 using System.Windows.Forms;
 using static System.Text.UTF8Encoding;
 using static ItsAlive.Properties.Resources;
+using static ItsAlive.Properties.Settings;
 
 namespace ItsAlive
 {
@@ -13,6 +14,7 @@ namespace ItsAlive
     {
         private BackgroundWorker _pingBw = new BackgroundWorker(); //Ping background worker test
         private BackgroundWorker _emailBw = new BackgroundWorker(); //Email Background Worker
+        
 
         private bool _router = false; //Router Status bool
         private bool _nas = false; // server status bool
@@ -40,7 +42,7 @@ namespace ItsAlive
             _emailBw.DoWork += new DoWorkEventHandler(email_bw_DoWork);
             _emailBw.ProgressChanged += new ProgressChangedEventHandler(email_bw_ProgressChanged);
             _emailBw.RunWorkerCompleted += new RunWorkerCompletedEventHandler(email_bw_RunWorkerCompleted);
-        }
+            }
 
         //Minimize to system tray instead of taskbar
         private void frmMain_Resize(object sender, EventArgs e)

@@ -22,14 +22,5 @@ namespace ItsAlive.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("smtp.gmail.com")]
-        public string SMTP_HOST {
-            get {
-                return ((string)(this["SMTP_HOST"]));
-            }
-        }
     }
 }
