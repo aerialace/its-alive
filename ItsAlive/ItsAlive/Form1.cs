@@ -11,7 +11,7 @@ namespace ItsAlive
 {
     public partial class Form1 : Form
     {
-        private BackgroundWorker _pingBw = new BackgroundWorker(); //Ping background worker!!
+        private BackgroundWorker _pingBw = new BackgroundWorker(); //Ping background worker
         private BackgroundWorker _emailBw = new BackgroundWorker(); //Email Background Worker
 
         private bool _router = false; //Router Status bool
